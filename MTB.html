@@ -3,11 +3,8 @@
 <head>
 	<title>PDT - Meet the Brothers</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Unica University Template">
-	<meta name="keywords" content="event, unica, creative, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/brothers/favicon.ico" rel="shortcut icon"/>
+	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -16,6 +13,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/themify-icons.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
@@ -43,7 +42,7 @@
 
 			<!-- dropdown button  -->
 
-		<div class="dropdown">
+		<!-- <div class="dropdown">
 		  <button class="dropbtn">Classes</button>
 		  <div class="dropdown-content">
 		    <a href="#">Lambda Class Fall '19</a>
@@ -54,7 +53,7 @@
 		    <a href="#Zeta">Zeta Class Fall '17</a>
 		    <a href="#Epsilon">Epsilon Class Spring '17</a>
 		  </div>
-		</div>
+		</div> -->
 
 	<!-- dropdown button end -->
 
@@ -64,18 +63,130 @@
 		<div class="container">
 			<ul class="main-menu">
 				<img src="img/logo.jpg" alt="" style="width:120px;height:70px; margin-left: -75px">
-				<li><a href="home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="events.html">Events</a></li>
-				<li class="active"><a href="MTB.html">Meet the Brothers</a></li> 				
+				<li class="active"><a href="MTB.html">Meet the Brothers</a></li> 		
 			</ul>
 		</div>
 	</nav>
+
+
+
+	<!-- script for searching names  -->
+	<script>
+		function myFunction() {
+		  // Declare variables
+		  var input, filter, ul, li, a, i, txtValue;
+		  input = document.getElementById('myInput');
+		  filter = input.value.toUpperCase();
+		  ul = document.getElementById("myUL");
+		  li = ul.getElementsByTagName('li');
+
+		  // Loop through all list items, and hide those who don't match the search query
+		  for (i = 0; i < li.length; i++) {
+		    a = li[i].getElementsByTagName("a")[0];
+		    txtValue = a.textContent || a.innerText;
+		    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		      li[i].style.display = "";
+		    } else {
+		      li[i].style.display = "none";
+		    }
+		  }
+		}
+</script>
 	<!-- Header section end -->
 	<div style="background-color: #f0feff;">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+					<ul class = "hidenames" id="myUL">
+					    
+					  <li><a href="#HunterMacias">Hunter Macias</a></li>
+					  <li><a href="#jack">Jack Hite</a></li>
+					  <li><a href="#ari">Ari Rosenberg</a></li>
+					  <li><a href="#bo">Bo Turner</a></li>
+					  <li><a href="#mikey">Mikey Zhou</a></li>
+					  <li><a href="#antonio">Antonio Anastasio</a></li>
+					  <li><a href="#denis">Denis Izotov</a></li>
+					  <li><a href="#wes">Wes Colvin</a></li>
+					  <li><a href="#elliot">Elliot Austin</a></li>
+					  <li><a href="#ty">Ty LaVictoire</a></li>
+					  <li><a href="#carlos">Carlos Crespo</a></li>
+					  <li><a href="#aldo">Aldo Rabago</a></li>
+					  <li><a href="#Ishaan">Ishaan Zaveri</a></li>
+
+					  <!-- kappa class -->
+					  <li><a href="#spencer">Spencer Tsang</a></li>
+					  <li><a href="#ranvir">Ranvir Randhawa</a></li>
+					  <li><a href="#dandre">D'Andre Carson</a></li>
+					  <li><a href="#kavin">Kavin Lingaraju</a></li>
+					  <li><a href="#matt">Matt Murray</a></li>
+					  <li><a href="#alaap">Alaap Bharadwaj</a></li>
+					  <li><a href="#izzy">Israel "Izzy" Quintana</a></li>
+
+					  <!-- Iota Class -->
+					  <li><a href="#evan">Evan Patel</a></li>
+					  <li><a href="#tyron">Tyron "Ty" Virgino</a></li>
+					  <li><a href="#ishaanj">Ishaan Jaffer</a></li>
+					  <li><a href="#parth">Parth Desai</a></li>
+					  <li><a href="#michaelc">Michael Crouch</a></li>
+					  <li><a href="#austin">Austin Giles-Purnell</a></li>
+					  <li><a href="#sharif">Sharif Shibli</a></li>
+					  <li><a href="#jacob">Jacob Sidaros</a></li>
+					  <li><a href="#oneil">Oniel Gonzalez</a></li>
+					  <li><a href="#ishaanj">Ishaan Jaffer</a></li>
+					  <li><a href="#nima">Nima Meftah</a></li>
+					  <li><a href="#christianz">Christian Zaia</a></li>
+					  <li><a href="#cory">Cory Pietruszka</a></li>
+					  <li><a href="#shayan">Shayan Vahabi</a></li>
+					  <li><a href="#tus">Arthur "Tus" Brottier</a></li>
+					  <li><a href="#ishaanj">Ishaan Jaffer</a></li>
+					  <li><a href="#sergio">Sergio Miller Bustamante</a></li>
+					  <li><a href="#ishaanj">Ishaan Jaffer</a></li>
+
+					  <!-- theta class -->
+					  <li><a href="#gus">Joseph "Gus" Zemke</a></li>
+					  <li><a href="#alext">Terrence "Alex" Townsend</a></li>
+					  <li><a href="#jaime">Jaime Caballero</a></li>
+					  <li><a href="#pol">Pol Plumer</a></li>
+					  <li><a href="#nicka">Nicholas "Nick" Abraham</a></li>
+					  <li><a href="#collinp">Collin Platt</a></li>
+					  <li><a href="#enoch">Enoch Gang</a></li>
+					  <li><a href="#nickw">Nickolas "Nick" Wong</a></li>
+					  <li><a href="#alexk">Alex Kowalczuk</a></li>
+					  <li><a href="#rahil">Rahil Dadlani</a></li>
+
+					  <!-- Eta Class -->
+					  <li><a href="#maxx">Maximillian "Maxx" Moore</a></li>
+					  <li><a href="#tony">Tony Schliesser</a></li>
+					  <li><a href="#timwu">Tim Wu</a></li>
+					  <li><a href="#richard">Richard McCoy</a></li>
+					  <li><a href="#brady">Brady Lauer</a></li>
+					  <li><a href="#greg">Gregory "Greg" Geel</a></li>
+					  <li><a href="#ishaanj">Ishaan Jaffer</a></li>
+					  <li><a href="#santa">Santa Takahashi</a></li>
+					  <li><a href="#arren">Arren DeLos Santos</a></li>
+					  <li><a href="#kenny">Kenny Lee</a></li>
+					  <li><a href="#adam">Adam Epstein</a></li>
+					  <li><a href="#chello">Marcello Chunn-Gnaulati</a></li>
+					  <li><a href="#victor">Victor Yuan</a></li>
+
+					  <!-- Zeta Class -->
+					  <li><a href="#rashy">Arash "Rashy" Jouzdani</a></li>
+					  <li><a href="#nicks">Nickolas "Nick" Stefan</a></li>
+					  <li><a href="#sky">Skyler "Sky" Gerdes</a></li>
+					  <li><a href="#harley">Harley Lehrke</a></li>
+					  <li><a href="#faiz">Faiz Wahab</a></li>
+
+					  <!-- Epsilon Class -->
+					  <li><a href="#frantz">Frantz Desir</a></li>
+					  <li><a href="#graham">Graham Falk</a></li>
+					  <li><a href="#nickp">Nicholas "Nick" Peeleman</a></li>
+					  <li><a href="#bryan">Bryan Cruz</a></li>
+					  <li><a href="#adamo">Adamo De Vito</a></li>
+					  <li><a href="#marco">Marco Antonio Forcina</a></li>
 
 
-
+					 </ul>
 
 	<!-- Breadcrumb section -->
 	<div class="site-breadcrumb">
@@ -97,6 +208,7 @@
 			<div class="row">
 
 				<!-- Hunter Macias -->
+				<a name="HunterMacias"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/Hunter.jpg" alt="Hunter Rocha" style="width:1200px;height:300px;">
@@ -109,6 +221,7 @@
 
 
 				<!-- Jack Hite -->
+				<a name="jack"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/Jack.jpg" alt="Jack Hite" style="width:1200px;height:300px;">
@@ -132,6 +245,7 @@
 
 
 				<!-- Bo Turner -->
+				<a name="bo"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/Bo.jpg" alt="" style="width:1200px;height:300px;">
@@ -141,6 +255,7 @@
 				</div>
 
 				<!--Mikey Zhou  -->
+				<a name="mikey"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/mikey.jpg" alt="" style="width:1200px;height:300px;">
@@ -150,6 +265,7 @@
 				</div>
 
 				<!-- Antonio Anastasia -->
+				<a name="antonio"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/antonio.jpg" alt="" style="width:1200px;height:300px;">
@@ -160,6 +276,7 @@
 				</div>
 
 				<!-- Denis Izotov -->
+				<a name="denis"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/denis.jpg" alt="" style="width:1200px;height:300px;">
@@ -170,6 +287,7 @@
 				</div>
 
 				<!-- Wes Colvin -->
+				<a name="wes"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/wes.jpg" alt="" style="width:1200px;height:300px;">
@@ -180,6 +298,7 @@
 				</div>
 
 				<!-- Elliot Austin -->
+				<a name="elliot"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/elliot.jpg" alt="" style="width:1200px;height:300px;">
@@ -190,6 +309,7 @@
 				</div>
 
 				<!-- Ty LaVictoire--> 
+				<a name="ty"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/ty.jpg" alt="" style="width:1200px;height:300px;">
@@ -200,6 +320,7 @@
 				</div>
 
 				<!-- Carlos Crespo -->
+				<a name="carlos"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/carlos.jpg" alt="" style="width:1200px;height:300px;">
@@ -210,6 +331,7 @@
 				</div>
 
 				<!-- Aldo Rabago -->
+				<a name="aldo"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/aldo.jpg" alt="" style="width:1200px;height:300px;">
@@ -220,6 +342,7 @@
 				</div>
 
 				<!-- Ishaan Zaveri -->
+				<a name="ishaan"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/ishaan.jpg" alt="" style="width:1200px;height:300px;">
@@ -241,24 +364,27 @@
 				<div class="row">
 
 				<!-- Spencer Tsang -->
+				<a name="spencer"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
-						<img/brothers src="img/brothers/spencer.jpg" alt="Spencer Tsang" style="width:1200px;height:300px;">
+						<img/brothers src="img/brothers/Spencer.jpg" alt="Spencer Tsang" style="width:1200px;height:300px;">
 					</div>
 						<h5>Spencer Tsang</h5>
 						<p>Kappa Class Spring '19 <br>Hometown: Sacramento, CA <br>Major: Entrepreneurship & Innovation</p>	
 				</div>
 
 				<!-- Ranvir Randhawa -->
+				<a name="ranvir"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
-						<img/brothers src="img/brothers/ranvir.jpg" alt="ranvir" style="width:1200px;height:300px;">
+						<img/brothers src="img/brothers/Ranvir.jpg" alt="ranvir" style="width:1200px;height:300px;">
 					</div>
 						<h5>Ranvir Randhawa</h5>
 						<p>Kappa Class Spring '19 <br>Hometown: Payson, Az<br>Major: Computer Science</p>	
 				</div>
 
 				<!-- D'andre Carson-->
+				<a name="dandre"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/dandre.jpg" alt="dandre" style="width:1200px;height:300px;">
@@ -268,6 +394,7 @@
 				</div>
 
 				<!-- Kavin Lingaraju-->
+				<a name="kavin"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/kavin.jpg" alt="kavin" style="width:1200px;height:300px;">
@@ -277,15 +404,17 @@
 				</div>
 
 				<!-- Matt Murray -->
+				<a name="matt"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/matt.jpg" alt="matt murray" style="width:1200px;height:300px;">
 					</div>
-						<h5>Spencer Tsang</h5>
+						<h5>Matt Murray</h5>
 						<p>Kappa Class Spring '19 <br>Hometown: Folsom, CA <br>Major: Finance</p>	
 				</div>
 
 				<!-- alaap bharadwaj -->
+				<a name="alaap"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/alaap.jpg" alt="alaap" style="width:1200px;height:300px;">
@@ -295,6 +424,7 @@
 				</div>
 
 				<!-- Izzy Quintana -->
+				<a name="izzy"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/izzy.jpg" alt="izzy" style="width:1200px;height:300px;">
@@ -314,6 +444,7 @@
 				<div class="row">
 
 				<!-- Evan Patel -->
+				<a name="evan"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/evan.jpg" alt="evan" style="width:1200px;height:300px;">
@@ -323,6 +454,7 @@
 				</div>
 
 				<!-- Tyrone Virgino -->
+				<a name="tyrone"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/tyrone.jpg" alt="tyrone" style="width:1200px;height:300px;">
@@ -332,6 +464,7 @@
 				</div>
 
 				<!-- Ishaan Jaffer -->
+				<a name="ishaanj"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/ishaanj.jpg" alt="Ishaan J" style="width:1200px;height:300px;">
@@ -341,6 +474,7 @@
 				</div>
 
 				<!-- Parth Desai -->
+				<a name="parth"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/parth.jpg" alt="parth" style="width:1200px;height:300px;">
@@ -350,6 +484,7 @@
 				</div>
 
 				<!-- Michael Crouch -->
+				<a name="michaelc"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/michael.jpg" alt="Michael" style="width:1200px;height:300px;">
@@ -359,6 +494,7 @@
 				</div>
 
 				<!-- Austin Giles -->
+				<a name="austin"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/austin.jpg" alt="austin" style="width:1200px;height:300px;">
@@ -368,6 +504,7 @@
 				</div>
 
 				<!-- sharif -->
+				<a name="sharif"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/sharif.jpg" alt="sharif" style="width:1200px;height:300px;">
@@ -377,6 +514,7 @@
 				</div>
 
 				<!-- Jacob Sidaros -->
+				<a name="jacob"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/jacob.jpg" alt="jacob" style="width:1200px;height:300px;">
@@ -386,6 +524,7 @@
 				</div>
 
 				<!-- Oniel Gonzalez -->
+				<a name="oniel"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/oniel.jpg" alt="Oniel Gonzalez" style="width:1200px;height:300px;">
@@ -395,6 +534,7 @@
 				</div>
 
 				<!-- Nima Meftah-->
+				<a name="nima"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/nima.jpg" alt="nima" style="width:1200px;height:300px;">
@@ -404,6 +544,7 @@
 				</div>
 
 				<!-- Christian zaia -->
+				<a name="christianz"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/christian.jpg" alt="christian zaia" style="width:1200px;height:300px;">
@@ -413,6 +554,7 @@
 				</div>
 
 				<!-- Cory Pietruszka -->
+				<a name="cory"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/cory.jpg" alt="cory" style="width:1200px;height:300px;">
@@ -422,6 +564,7 @@
 				</div>
 
 				<!-- shayan -->
+				<a name="shayan"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/shayan.jpg" alt="shayan" style="width:1200px;height:300px;">
@@ -431,6 +574,7 @@
 				</div>
 
 				<!-- Arthur "Tus" Brottier -->
+				<a name="tus"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/tus.jpg" alt="tus" style="width:1200px;height:300px;">
@@ -440,6 +584,7 @@
 				</div>
 
 				<!-- Sergio -->
+				<a name="sergio"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/sergio.jpg" alt="sergio" style="width:1200px;height:300px;">
@@ -456,6 +601,8 @@
 				<h3>Theta Class</h3>
 				<div class="row">
 
+				<!-- Gus -->
+				<a name="gus"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/gus.jpg" alt="gus" style="width:1200px;height:300px;">
@@ -465,6 +612,7 @@
 				</div>
 
 				<!-- Alex Townsend -->
+				<a name="alext"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/alex.jpg" alt="alex Townsend" style="width:1200px;height:300px;">
@@ -475,6 +623,7 @@
 
 
 				<!-- Jaime Caballero -->
+				<a name="jaime"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/jaime.jpg" alt="jaime" style="width:1200px;height:300px;">
@@ -486,6 +635,7 @@
 
 
 				<!--Pol -->
+				<a name="pol"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/pol.jpg" alt="pol p" style="width:1200px;height:300px;">
@@ -496,6 +646,7 @@
 
 
 				<!-- Nick Abraham -->
+				<a name="nicka"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/nickabraham.jpg" alt="nick a" style="width:1200px;height:300px;">
@@ -506,6 +657,7 @@
 
 
 				<!--Collin Platt  -->
+				<a name="collinp"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/collinp.jpg" alt="collin platt" style="width:1200px;height:300px;">
@@ -516,6 +668,7 @@
 
 
 				<!-- Enoch Gang -->
+				<a name="enoch"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/enoch.jpg" alt="enoch" style="width:1200px;height:300px;">
@@ -525,6 +678,7 @@
 				</div>
 
 				<!-- Nicolas "Nick" Wong -->
+				<a name="nickw"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/nickwong.jpg" alt="nick" style="width:1200px;height:300px;">
@@ -534,6 +688,7 @@
 				</div>
 
 				<!-- Alex Kowalczuk -->
+				<a name="alexk"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/alexk.jpg" alt="alex Kowalczuk" style="width:1200px;height:300px;">
@@ -543,6 +698,7 @@
 				</div>
 
 				<!-- Rahil -->
+				<a name="rahil"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/rahil.jpg" alt="rahil" style="width:1200px;height:300px;">
@@ -562,6 +718,7 @@
 
 
 				<!-- Max M. -->
+				<a name="maxx"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/max.jpg" alt="maxx m" style="width:1200px;height:300px;">
@@ -572,6 +729,7 @@
 
 
 				<!-- Tony S. -->
+				<a name="tony"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/tony.jpg" alt="tony s" style="width:1200px;height:300px;">
@@ -582,6 +740,7 @@
 
 
 				<!-- Tim Wu -->
+				<a name="timw"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/timw.jpg" alt="tim wu" style="width:1200px;height:300px;">
@@ -592,6 +751,7 @@
 
 
 				<!-- Richard M -->
+				<a name="richard"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/richard.jpg" alt="richard" style="width:1200px;height:300px;">
@@ -602,6 +762,7 @@
 
 
 				<!-- Brady L -->
+				<a name="brady"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/brady.jpg" alt="brady" style="width:1200px;height:300px;">
@@ -612,6 +773,7 @@
 
 
 				<!-- Greg Geel -->
+				<a name="greg"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/gregg.jpg" alt="greg geel" style="width:1200px;height:300px;">
@@ -622,6 +784,7 @@
 
 
 				<!-- Santa Takahashi -->
+				<a name="santa"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/santa.jpg" alt="santa" style="width:1200px;height:300px;">
@@ -632,6 +795,7 @@
 
 
 				<!-- Arren DeLos S -->
+				<a name="arren"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/arren.jpg" alt="arren santos" style="width:1200px;height:300px;">
@@ -642,6 +806,7 @@
 
 
 				<!-- Kenny Lee -->
+				<a name="kenny"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/kenny.jpg" alt="kenny lee" style="width:1200px;height:300px;">
@@ -652,6 +817,7 @@
 
 
 				<!-- Adam Epstein -->
+				<a name="adam"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/adam.jpg" alt="adam" style="width:1200px;height:300px;">
@@ -662,6 +828,7 @@
 
 
 				<!-- Marcello -->
+				<a name="chello"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/marcello.jpg" alt="marcello" style="width:1200px;height:300px;">
@@ -672,6 +839,7 @@
 
 
 				<!-- Victor Yuan -->
+				<a name="victor"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/victor.jpg" alt="victor" style="width:1200px;height:300px;">
@@ -690,6 +858,7 @@
 
 
 				<!-- Rashy -->
+				<a name="rashy"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/rashy.jpg" alt="rashy" style="width:1200px;height:300px;">
@@ -700,6 +869,7 @@
 
 
 				<!-- Nick Stefan -->
+				<a name="nicks"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/nickstefan.jpg" alt="nickstefan" style="width:1200px;height:300px;">
@@ -710,16 +880,18 @@
 
 
 				<!-- sky -->
+				<a name="sky"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/sky.jpg" alt="sky" style="width:1200px;height:300px;">
 					</div>
-						<h5>Skyler "Sky" gerdes</h5>
+						<h5>Skyler "Sky" Gerdes</h5>
 						<p>Zeta Class Spring '17 <br>Hometown: Salt Lake City, UT<br>Major: Biology</p>	
 				</div>
 
 
 				<!-- harley -->
+				<a name="harley"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/harley.jpg" alt="harley" style="width:1200px;height:300px;">
@@ -730,6 +902,7 @@
 
 
 				<!-- faiz -->
+				<a name="faiz"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/faiz.jpg" alt="faiz" style="width:1200px;height:300px;">
@@ -748,6 +921,7 @@
 
 
 				<!-- Frantz -->
+				<a name="frantz"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/frantz.jpg" alt="frantz" style="width:1200px;height:300px;">
@@ -758,6 +932,7 @@
 
 
 				<!-- Graham Falk -->
+				<a name="graham"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/graham.jpg" alt="graham" style="width:1200px;height:300px;">
@@ -768,6 +943,7 @@
 
 
 				<!-- Nick peeleman -->
+				<a name="nickp"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/nickpeeleman.jpg" alt="nick peeleman" style="width:1200px;height:300px;">
@@ -778,6 +954,7 @@
 
 
 				<!-- Bryan Cruz -->
+				<a name="bryan"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
 						<img/brothers src="img/brothers/bryan.jpg" alt="bryan c" style="width:1200px;height:300px;">
@@ -788,9 +965,10 @@
 
 
 				<!-- Adamo De Vito -->
+				<a name="adamo"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
-						<img/brothers src="img/brothers/adamo.jpg" alt="adamo" style="width:1200px;height:300px;">
+						<img/brothers src="img/brothers/marco.jpg" alt="adamo" style="width:1200px;height:300px;">
 					</div>
 						<h5>Adamo De Vito</h5>
 						<p>Epsilon Class Fall '16 <br>Hometown: Sherman Oaks, CA<br>Major: Psychology</p>	
@@ -798,9 +976,10 @@
 
 
 				<!-- Marco Antonio F -->
+				<a name="marco"></a>
 				<div class="col-lg-4 col-md-6 MTB-item">
 					<div class="MTB-thumb">
-						<img/brothers src="img/brothers/marco.jpg" alt="marco f" style="width:1200px;height:300px;">
+						<img/brothers src="img/brothers/adamo.jpg" alt="marco f" style="width:1200px;height:300px;">
 					</div>
 						<h5>Marco Antonio Forcina</h5>
 						<p>Epsilon Class Fall '16 <br>Hometown: Rome, Italy<br>Major: Environmental Science</p>	
@@ -813,20 +992,9 @@
 				</div>
 
 
-
-
-
-
-			<div class="text-center">
-				<ul class="site-pageination">
-					<li><a href="#" class="active">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-				</ul>
-			</div>
 		</div>
 	</section>
-	<!-- End of Lambda class-->
+	<!-- end of classes -->
 
 
 		<!-- Footer section -->
@@ -839,7 +1007,7 @@
                     <p1>California Chi</p1>
                     <p>Connect With Us</p>
                     <p>
-                    	<a href="https://www.facebook.com"><i class="fa fa-facebook-square mr-1"></i></a>
+                    	<a href="https://www.facebook.com/PhiDeltUSF/"><i class="fa fa-facebook-square mr-1"></i></a>
                     	<a href="https://www.linkedin.com/in/hunterrocha/"><i class="fa fa-linkedin-square"></i></a>
                     </p>
 
@@ -850,12 +1018,12 @@
                         <li><a class="email"href="#">huntermacias20@gmail.com</a></li>
                         <br/>
                         <li> <p>2340 Fulton St. San Francisco, 94118</p> </li>
-                        <li> <p>1+559-458-8379</p> </li>
+                        <li> <p>(415)422-7256</p> </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-sm-2 col-xs-3">
                     <ul>
-                        <li> <h5> <a href="home.html" style="margin-top: 5em">HOME</a> <h5></li>
+                        <li> <h5> <a href="index.html" style="margin-top: 5em">HOME</a> <h5></li>
                         <li> <h5><a href="about.html">ABOUT US</a> <h5></li>
                         <li> <h5><a href="Events.html">EVENTS</a> <h5></li>
                         <li> <h5><a href="#">MEET THE BROTHERS</a> <h5></li>
@@ -870,7 +1038,7 @@
                           
     <div class="footer-bottom">
         <div class="container">
-            <p class="pull-left copyright"> Copyright © Footer 2014. All right reserved. </p>
+            <p class="pull-left copyright"> Copyright © Footer 2020. All right reserved. </p>
        
         </div>
     </div>
@@ -878,8 +1046,6 @@
 
 </footer>
 	<!-- Footer section end-->
-
-
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
